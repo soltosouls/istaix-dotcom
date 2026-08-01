@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+header{
+    width:100%;
+    height:70px;
+    background:#243746;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    top: 0;
+    position: sticky;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.logo img{
+    width:31px;
+    height:30px;
+    display:block;
+    object-fit:contain;
+    image-rendering:pixelated;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#b7d4ff;
+}
+
+.btn{
+    text-decoration:none;
+    color:#243746;
+    background:#d9ecff;
+    padding:10px 22px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+.hero {
+    height: 100vh; /* Full viewport height */
+    background-image: url("/heroimg.png");       
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: left;
+    background-size: 70%;
+    background-color:#E4E3E8;
+    background-position: top right;
+}
+
+
+.hero-text p{
+    font-family: sans-serif;
+}
+
+.hero-text h1 span:first-child{
+    font-size: 3.5rem;
+}
+
+.hero-text p{
+   width: 34%; 
+   line-height: 28px;
+   color: #7591A3;
+   padding-top: 30px;
+}
+
+.hero-text p strong{
+    color:#243746;
+}
+
+.hero-text{
+    padding: 8%;
+}
+
+.hero-btn{
+    padding: 1% 35px;
+    background-color: #243746;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 25px;
+    margin-top: 5%;
+    align-items: center;
+}
+
+.play-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: #243746;
+    border-style: solid;
+    z-index: 1;
+}
+
+.explore-btn{
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #243746;
+}
+
+.achieve{
+    margin: 5% 5%;
+}
+
+.trusted{
+    margin-top: 12%;
+    justify-content: center;
+    display: flex;
+    padding-right: 80px;
+}
+
+.cards{
+    display: flex;
+    gap: 28px;
+    text-align: left;
+    flex-wrap: nowrap;
+    margin: 0 5%;
+    margin-top: 0;
+}
+
+.card1{
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-card,
+.card-img{
+    aspect-ratio: 312 / 333;
+    overflow: hidden;
+}
+
+.first-card img,
+.card-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* img3 fills the source canvas more tightly than the other card assets. */
+.first-card img{
+    object-fit: contain;
+    padding: 9% 0;
+}
+
+.card-content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px 28px 32px;
+    
+}
+
+.card1 h4{
+    margin: 0 0 10px;
+    color: #243746;
+    font-size: 19px;
+}
+
+.card1 p{
+    color: #7591A3;
+    line-height: 1.7;
+}
+
+.read-more{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    color: #FF9900;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-more-arrow{
+    width: 32px;
+    height: 32px;
+    display: inline-grid;
+    place-items: center;
+    color: #FF9900;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: transform .2s ease, background-color .2s ease;
+}
+
+.read-more:hover .read-more-arrow,
+.read-more:focus-visible .read-more-arrow{
+    background: #7591A3;
+    transform: translateX(4px);
+}
+
+.build-sect{
+    align-items: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 5% 0px;
+    line-height: 3rem;
+}
+
+.build-sect img{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.reviews{
+    object-fit: contain;
+    background-color: #E6F0F4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+    color: #263640;
+}
+
+.inner-box{
+    padding: 5% 5%;
+    background-color: #FFFFFF;
+    margin: 5% 20%;
+    text-align: left;
+    border-radius: 8px;
+    line-height: 1.7rem;
+    display: flex;
+    gap: 2%;
+    color: #263640;
+}
+
+.inner-box span{
+    font-size: 3.5rem;
+}
+
+.cta{
+    padding: 15%;
+    background-color: #FFFFFF;
+    background-image: url("/cta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+
+.cta-content button{
+    background-color: #243746;
+    color: white;
+    padding: 1%;
+    width: 35%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.cta-content input{
+    width: 200px;
+    height: 45px;
+    padding: 0 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.input{
+    display: flex;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+
+.cta-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.cta-content h1{
+    font-size: 2.7rem;
+    color: #243746;
+}
+
+.footer-content{
+    background:#243746;
+    padding:60px 70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.footer-left{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.footer-content img{
+    width: 90px;
+    height: auto;
+}
+
+.nav{
+    display:flex;
+    gap:25px;
+}
+
+.nav a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.quick-links{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.quick-links a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.copyright{
+    color:#ddd;
+    font-size:14px;
+}
+
+.download-icons{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+}
+
+.download-icons p{
+    color:#fff;
+    margin:0;
+}
+
+.download-icons img{
+    width:150px;
+    display:block;
+}
+
+
+
+
+@media (max-width: 760px){
+    .cards{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .card1{
+        flex-basis: 100%;
+    }
+}
