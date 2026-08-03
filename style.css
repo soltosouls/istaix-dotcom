@@ -444,8 +444,8 @@ nav{
     }
 
     .hero-text h1 span:first-child{
-        font-size:2rem;
-        line-height:0.5;
+        font-size:1.7rem;
+        line-height:1;
     }
 
     .explore-btn{
@@ -455,7 +455,7 @@ nav{
     }
 
     .hero-text p{
-        width: 400px;
+        width: 100%;
         max-width:100%;
         color: #425d6e;
     }
