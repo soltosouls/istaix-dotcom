@@ -432,31 +432,38 @@ nav{
         justify-content:flex-start;
         min-height:auto;
 
-        padding:60px 20px;
+        padding: 70px 20px;
 
-        background-size:contain;
+        background-size: cover;
         background-position:top center;
     }
 
     .hero-text{
         padding:0;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .hero-text h1 span:first-child{
         font-size:2rem;
-        line-height:1.2;
+        line-height:0.5;
+    }
+
+    .explore-btn{
+        display:flex;
+        font-size:1rem;
+        flex-wrap:no-wrap;
     }
 
     .hero-text p{
-        width:100%;
+        width: 400px;
         max-width:100%;
+        color: #425d6e;
     }
 
     .hero-btns{
         flex-wrap:wrap;
         gap:18px;
-        margin-top:30px;
+        margin-top:20px;
     }
 
     .achieve img{
